@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+![Logo-nav](https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/Kalvium-Logo.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### CA - 4: More Quiz
 
-## Available Scripts
 
-In the project directory, you can run:
+### Problem statement:
+You are asked to create a quiz app using functional components (have to use `hooks` for state-management).
+There are few functionalities - that you need to achieve ->
 
-### `npm start`
+1. An option through which one can toggle between `dark` and `light` mode.
+2. Once you answer a particular question -> you should be able to move to the next question automatically - until you reach the last question. (You cannot attempt a question twice -> so no need for a functionality which can lead you back to the previous question.)
+3. Once you answer the final question -> a result screen should pop-up --> displaying your result.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### Steps to follow:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. The structure of the project is already provided to you. You just need to clone this repository and run the following command: `npm i` or `npm install`.
+2. The set of questions is also provided to you inside `questions.js` file. 
+   **NOTE:** Inside `questions.js` -> there are total of 5 questions, out of which only the first question is complete. You need to complete the other questions by filling-in the values for `isCorrect` field.
+3. There are two functional components: 
+   1. QuestionBox.js -> you have to implement the following features inside this component:
+       1. `Question: 2 out of 5` ( if you are at the first question -> where 2 is coming from your current question number, and 5 is coming from the total number of questions.)
+       2. Question description
+       3. 4 Options for the above question
 
-### `npm test`
+    You can take the below picture as reference:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    ![](https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/ca-4-react-quiz.png)
 
-### `npm run build`
+  2. Result.js -> Once the user have attempted all the questions, he/she should get his/her score in percentage.
+     You can take the below picture as reference:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+     ![](https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/ca-4-react-final.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**NOTE:** when you click on the button which changes toggles between dark and light mode -> the inner text of the button should also change -> ie: if the background is `dark` -> then `light` should be written on the button, else the vice-versa. You can see all the required functionalities working in the below given gif:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Demo:
 
-### `npm run eject`
+![](https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/ca-4-react-quiz-section-one.gif)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### More to come:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Once all the above mentioned functionalities are achieved -> then create two buttons named as 
+1. Highlight: which upon clicking should highlight the `question text` -> by highlight we mean that -> the color of the question text should change to `red`.
+2. Remove Highlight: which upon clicking should remove the red color and go back to the color which was used earlier -> in the above eg case -> the color should come back to dark blue color.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+You can see the working demo below in the gif:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![](https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/ca-4-react-quiz-section.gif)
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Happy Coding ❤️!
