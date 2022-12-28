@@ -3,7 +3,7 @@
 ### CA - 4: More Quiz
 
 
-### Problem statement:
+### Part 1:
 You are asked to create a quiz app using functional components (have to use `hooks` for state-management).
 There are few functionalities - that you need to achieve ->
 
@@ -37,7 +37,7 @@ There are few functionalities - that you need to achieve ->
 
 ![](https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/ca-4-react-quiz-section-one.gif)
 
-### More to come:
+### Part2: More to come:
 
 Once all the above mentioned functionalities are achieved -> then create two buttons named as 
 1. Highlight: which upon clicking should highlight the `question text` -> by highlight we mean that -> the color of the question text should change to `red`.
